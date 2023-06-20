@@ -16,7 +16,6 @@ func main() {
 	defer browser.MustClose()
 
 	oai := openai.NewClient(os.Getenv("OPENAI_API_KEY"))
-
 	username := "laurentzeimes"
 	page := stealth.MustPage(browser)
 	logger := log.New()
