@@ -1,4 +1,4 @@
-# go-langchain
+# langchain-go
 
 A golang implementation of [LangChain](https://github.com/hwchase17/langchain): Building applications with LLMs through composability
 

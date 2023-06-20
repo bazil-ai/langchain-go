@@ -1,4 +1,4 @@
-module gitlab.com/bazil/go-langchain
+module gitlab.com/bazil/langchain-go
 
 go 1.18
 

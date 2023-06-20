@@ -8,7 +8,7 @@ import (
 	"github.com/go-rod/rod/lib/proto"
 	"github.com/sashabaranov/go-openai"
 	"github.com/sirupsen/logrus"
-	"gitlab.com/bazil/go-langchain/llm"
+	"gitlab.com/bazil/langchain-go/llm"
 	"golang.org/x/net/html"
 	"strconv"
 	"strings"

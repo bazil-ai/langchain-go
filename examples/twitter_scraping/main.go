@@ -6,7 +6,7 @@ import (
 	"github.com/go-rod/stealth"
 	"github.com/sashabaranov/go-openai"
 	log "github.com/sirupsen/logrus"
-	"gitlab.com/bazil/go-langchain/agents"
+	"gitlab.com/bazil/langchain-go/agents"
 	"os"
 	"time"
 )
