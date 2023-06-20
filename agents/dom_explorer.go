@@ -8,7 +8,7 @@ import (
 	"github.com/go-rod/rod/lib/proto"
 	"github.com/sashabaranov/go-openai"
 	"github.com/sirupsen/logrus"
-	"gitlab.com/bazil/langchain-go/llm"
+	"gitlab.com/bazil/langchain-go/llms"
 	"golang.org/x/net/html"
 	"strconv"
 	"strings"
@@ -47,7 +47,7 @@ func cleanInternal(n *html.Node) {
 }
 
 type DomExplorer struct {
-	model             *llm.ChatCompletion
+	model             *llms.ChatCompletion
 	elementFunctions  []*openai.FunctionDefine
 	elementsFunctions []*openai.FunctionDefine
 	selectors         map[string]string
@@ -55,7 +55,7 @@ type DomExplorer struct {
 }
 
 func NewDomExplorer(oai *openai.Client) *DomExplorer {
-	model := llm.NewChatCompletion(oai, "gpt-3.5-turbo-16k-0613")
+	model := llms.NewChatCompletion(oai, "gpt-3.5-turbo-16k-0613")
 	elementFunctions := []*openai.FunctionDefine{{
 		Name:        "getElementById",
 		Description: "Returns an Element representing the element whose id property matches the specified string",

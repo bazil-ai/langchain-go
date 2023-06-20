@@ -1,4 +1,4 @@
-package llm
+package llms
 
 type Mock struct {
 	CompleteFunc func(prompt string) (string, error)
